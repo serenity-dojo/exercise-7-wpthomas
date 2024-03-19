@@ -8,9 +8,10 @@ public class Feeder {
             return (isPremium) ? SALMON : TUNA;
         } else if (animal.equals("Dog")) {
             return isPremium ? DELUXE_DOG_FOOD : DOG_FOOD;
+        } else if (animal.equals("Hamster")) {
+            return isPremium ? LETTUCE : CABBAGE;
         }
-
-        return CABBAGE;
+        return UNKNOWN;
 
     }
 }
